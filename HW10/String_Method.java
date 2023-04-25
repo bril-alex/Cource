@@ -3,6 +3,7 @@ package HW10;
 import java.util.*;
 
 public class String_Method {
+
     public String_Method(String shoppingList) {
         String shoppingListReplaced = shoppingList.replace(",","");
         String[] split = shoppingListReplaced.split("[, ]");
