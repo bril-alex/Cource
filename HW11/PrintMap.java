@@ -16,7 +16,6 @@ public class PrintMap {
         Map<Integer, String> sortedMap = sortMapByKey(myMap);
         printSortedMap(sortedMap);
     }
-
     public static Map<Integer, String> sortMapByKey(Map<Integer, String> map) {
         Map<Integer, String> sortedMap = new TreeMap<>(map);
         return sortedMap;
