@@ -13,16 +13,11 @@ public class PrintMap {
         myMap.put(15, "value15");
         myMap.put(3, "value3");
         myMap.put(6, "value6");
-        Map<Integer, String> sortedMap = sortMapByKey(myMap);
-        printSortedMap(sortedMap);
+        printSortedMap(myMap);
     }
-    public static Map<Integer, String> sortMapByKey(Map<Integer, String> map) {
-        Map<Integer, String> sortedMap = new TreeMap<>(map);
-        return sortedMap;
-    }
-
     public static void printSortedMap(Map<Integer, String> map) {
-        for (Map.Entry<Integer, String> printMap : map.entrySet()) {
+        Map<Integer, String> sortedMap = new TreeMap<>(map);
+        for (Map.Entry<Integer, String> printMap : sortedMap.entrySet()) {
             System.out.println(printMap.getKey() + "=" + printMap.getValue());
         }
     }
